@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties>
+        <property name="dialect" value="Mysql" />
+    </properties>
+    <settings>
+        <setting name="cacheEnabled" value="true" />
+        <setting name="lazyLoadingEnabled" value="false" />
+        <setting name="multipleResultSetsEnabled" value="false" />
+        <setting name="useColumnLabel" value="true" />
+        <setting name="useGeneratedKeys" value="true" />
+        <setting name="autoMappingBehavior" value="PARTIAL" />
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+        <setting name="defaultExecutorType" value="SIMPLE" />
+        <setting name="defaultStatementTimeout" value="25000" />
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <typeAliases>
+        <typeAlias type="java.util.Map" alias="map"></typeAlias>
+        <typeAlias type="java.util.List" alias="list"></typeAlias>
+        <typeAlias type="java.lang.String" alias="string"></typeAlias>
+        <typeAlias type="java.lang.Integer" alias="int"></typeAlias>
+        <typeAlias type="java.lang.Long" alias="long"></typeAlias>
+    </typeAliases>
+
+</configuration>
